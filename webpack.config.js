@@ -6,14 +6,14 @@ module.exports = {
         app: './src/entry/app.js'
     },
     output: {
-        path: __dirname + '/src/build/bundles',
+        path: __dirname + '/static',
         filename: '[name].bundle.js'
     },
     performance: {
         hints: false
     },
     watchOptions: {
-        ignored: ["node_modules", "src/build/**/*"]
+        ignored: ['node_modules', 'src/build/**/*']
     },
     module: {
         rules: [
@@ -34,7 +34,7 @@ module.exports = {
     },
     plugins: [
         new WebpackNotifierPlugin({
-            title: "ScratchJr",
+            title: 'ScratchJr',
             alwaysNotify: true
         })
     ]

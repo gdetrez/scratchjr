@@ -36,6 +36,7 @@ export default class IO {
     }
 
     static requestFromServer (url, whenDone) {
+        console.log(`Requesting`, url);
         var xmlrequest = new XMLHttpRequest();
         xmlrequest.addEventListener('error', transferFailed, false);
         xmlrequest.onreadystatechange = function () {

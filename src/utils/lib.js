@@ -11,7 +11,8 @@ export const fullscreenScaleMultiplier = 136;
 /* eslint-disable no-console */
 console.log('setting OS flags');
 /* eslint-enable no-console */
-export const isiOS = (typeof AndroidInterface == 'undefined');
+// export const isiOS = (typeof AndroidInterface == 'undefined');
+export const isiOS = false;
 export const isAndroid = (typeof AndroidInterface != 'undefined');
 
 export function libInit () {

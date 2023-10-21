@@ -60,11 +60,11 @@ export default class OS {
 
     // Database functions
     static stmt (json, fcn) {
-        tabletInterface.stmt(json, fcn);
+        // tabletInterface.stmt(json, fcn);
     }
 
     static query (json, fcn) {
-        tabletInterface.query(json, fcn);
+        // tabletInterface.query(json, fcn);
     }
 
     // DB helper - shared by both
@@ -79,55 +79,56 @@ export default class OS {
     // IO functions
 
     static cleanassets (ft, fcn) {
-        tabletInterface.cleanassets(ft, fcn);
+        // tabletInterface.cleanassets(ft, fcn);
     }
 
     static getsettings (fcn) {
-        tabletInterface.getsettings(fcn);
+        fcn(',');
+        // tabletInterface.getsettings(fcn);
     }
 
     // note the interfaces (iOS and Android) are responsible for deciding how
     // to manage getting media (e.g. whether it needs to be done in chunks etc)
     static getmedia (file, fcn) {
-        tabletInterface.getmedia(file, fcn);
+        // tabletInterface.getmedia(file, fcn);
     }
 
     static setmedia (str, ext, fcn) {
-        tabletInterface.setmedia(str, ext, fcn);
+        // tabletInterface.setmedia(str, ext, fcn);
     }
 
     static setmedianame (str, name, ext, fcn) {
-        tabletInterface.setmedianame(str, name, ext, fcn);
+        // tabletInterface.setmedianame(str, name, ext, fcn);
     }
 
     static getmd5 (str, fcn) {
-        tabletInterface.getmd5(str, fcn);
+        // tabletInterface.getmd5(str, fcn);
     }
 
     static remove (str, fcn) {
-        tabletInterface.remove(str, fcn);
+        // tabletInterface.remove(str, fcn);
     }
 
     static getfile (str, fcn) {
-        tabletInterface.getfile(str, fcn);
+        // tabletInterface.getfile(str, fcn);
     }
 
     static setfile (name, str, fcn) {
-        tabletInterface.setfile(name, str, fcn);
+        // tabletInterface.setfile(name, str, fcn);
     }
 
     // Sound functions
 
     static registerSound (dir, name, fcn) {
-        tabletInterface.registerSound(dir, name, fcn);
+        // tabletInterface.registerSound(dir, name, fcn);
     }
 
     static playSound (name, fcn) {
-        tabletInterface.playSound(name, fcn);
+        // tabletInterface.playSound(name, fcn);
     }
 
     static stopSound (name, fcn) {
-        tabletInterface.stopSound(name, fcn);
+        // tabletInterface.stopSound(name, fcn);
     }
 
     // Web Wiew delegate call backs
@@ -137,27 +138,27 @@ export default class OS {
     }
 
     static sndrecord (fcn) {
-        tabletInterface.sndrecord(fcn);
+        // tabletInterface.sndrecord(fcn);
     }
 
     static recordstop (fcn) {
-        tabletInterface.recordstop(fcn);
+        // tabletInterface.recordstop(fcn);
     }
 
     static volume (fcn) {
-        tabletInterface.volume(fcn);
+        // tabletInterface.volume(fcn);
     }
 
     static startplay (fcn) {
-        tabletInterface.startplay(fcn);
+        // tabletInterface.startplay(fcn);
     }
 
     static stopplay (fcn) {
-        tabletInterface.stopplay(fcn);
+        // tabletInterface.stopplay(fcn);
     }
 
     static recorddisappear (b, fcn) {
-        tabletInterface.recorddisappear(b, fcn);
+        // tabletInterface.recorddisappear(b, fcn);
     }
 
     // Record state
@@ -170,23 +171,24 @@ export default class OS {
     // camera functions
 
     static hascamera () {
-        camera = tabletInterface.hascamera();
+        // camera = tabletInterface.hascamera();
+        camera = false;
     }
 
     static startfeed (data, fcn) {
-        tabletInterface.startfeed(data, fcn);
+        // tabletInterface.startfeed(data, fcn);
     }
 
     static stopfeed (fcn) {
-        tabletInterface.stopfeed(fcn);
+        // tabletInterface.stopfeed(fcn);
     }
 
     static choosecamera (mode, fcn) {
-        tabletInterface.choosecamera(mode, fcn);
+        // tabletInterface.choosecamera(mode, fcn);
     }
 
     static captureimage (fcn) {
-        tabletInterface.captureimage(fcn);
+        // tabletInterface.captureimage(fcn);
     }
 
     static hidesplash (fcn) {
@@ -218,7 +220,7 @@ export default class OS {
     ///////////////
 
     static createZipForProject (projectData, metadata, name, fcn) {
-        tabletInterface.createZipForProject(projectData, metadata, name, fcn);
+        // tabletInterface.createZipForProject(projectData, metadata, name, fcn);
     }
 
 
@@ -248,29 +250,29 @@ export default class OS {
     }
 
     static registerLibraryAssets (version, assets, fcn) {
-        tabletInterface.registerLibraryAssets(version, assets, fcn);
+        // tabletInterface.registerLibraryAssets(version, assets, fcn);
     }
 
     static duplicateAsset (path, name, fcn) {
-        tabletInterface.duplicateAsset(path, name, fcn);
+        // tabletInterface.duplicateAsset(path, name, fcn);
     }
 
     // Name of the device/iPad to display on the sharing dialog page
     // fcn is called with the device name as an arg
     static deviceName (fcn) {
-        tabletInterface.deviceName(fcn);
+        // tabletInterface.deviceName(fcn);
     }
 
     static analyticsEvent (category, action, label) {
-        tabletInterface.analyticsEvent(category, action, label);
+        // tabletInterface.analyticsEvent(category, action, label);
     }
 
     static setAnalyticsPlacePref (preferredPlace) {
-        tabletInterface.setAnalyticsPlacePref(preferredPlace);
+        // tabletInterface.setAnalyticsPlacePref(preferredPlace);
     }
 
     static setAnalyticsPref (key, value) {
-        tabletInterface.setAnalyticsPref(key, value);
+        // tabletInterface.setAnalyticsPref(key, value);
     }
 
     // Web Wiew delegate call backs

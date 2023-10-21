@@ -739,7 +739,7 @@ export default class UI {
         UI.createTopBarClicky(div, 'grid', 'gridToggle off', UI.switchGrid);
         UI.createTopBarClicky(div, 'go', 'go on', UI.toggleRun);
         UI.createTopBarClicky(div, 'resetall', 'resetall', UI.resetAllSprites);
-        UI.createTopBarClicky(div, 'full', 'fullscreen', ScratchJr.fullScreen);
+        // UI.createTopBarClicky(div, 'full', 'fullscreen', ScratchJr.fullScreen);
         UI.setShowGrid(false);
     }
 
@@ -828,7 +828,7 @@ export default class UI {
         var w = Math.min(getDocumentWidth(), frame.offsetWidth);
         var h = Math.max(getDocumentHeight(), frame.offsetHeight);
         frame.appendChild(gn('stage'));
-        var list = ['go', 'full'];
+        var list = ['go'];
         for (var i = 0; i < list.length; i++) {
             gn(list[i]).className = gn(list[i]).className + ' presentationmode';
             frame.appendChild(gn(list[i]));

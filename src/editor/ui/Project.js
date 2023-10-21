@@ -83,12 +83,17 @@ export default class Project {
         ScratchJr.log('all UI assets recieved - procced to call server', ScratchJr.getTime(), 'sec');
         Project.setProgress(20);
         UI.layout();
+
+        // var e = document.createEvent('TouchEvent');
+        // e.initTouchEvent();
+        ScratchJr.enterFullScreen();
+
         IO.getObject(ScratchJr.currentProject, Project.dataRecieved);
     }
 
     static dataRecieved (str) {
         ScratchJr.log('got project metadata', ScratchJr.getTime(), 'sec');
-        var data = JSON.parse(str)[0];
+        var data = JSON.parse(str);
         metadata = IO.parseProjectData(data);
         mediaCount = -1;
         if (metadata.json) {
@@ -175,7 +180,7 @@ export default class Project {
             return;
         }
         var h = projectbarsize - Math.round(projectbarsize * perc / 100);
-        ScratchJr.log('setProgress', perc, h, mediaCount, mediaCountBase);
+        console.log('setProgress', perc, h, mediaCount, mediaCountBase);
         gn('progressbar').style.height = h + 'px';
         if (h == 0) {
             gn('progressbar2').style.height = '0px';

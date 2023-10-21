@@ -169,7 +169,7 @@ export default class Page {
             me.setSVG(str);
             IO.getImagesInSVG(str, function () {
                 var base64 = IO.getImageDataURL(me.md5, btoa(str));
-                me.setBackgroundImage(base64, fcn);
+                me.setBackgroundImage('data:image/svg+xml;base64,' + base64, fcn);
             });
         }
     }
