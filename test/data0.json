@@ -13,13 +13,13 @@
       "sprites": [
         "Cat 1"
       ],
-      "md5": "/test/backgrounds/Suburbs.svg",
+      "md5": "/scratchjr/test/backgrounds/Suburbs.svg",
       "num": 1,
       "lastSprite": "Cat 1",
       "Cat 1": {
         "shown": true,
         "type": "sprite",
-        "md5": "/test/characters/Cat.svg",
+        "md5": "/scratchjr/test/characters/Cat.svg",
         "id": "Cat 1",
         "flip": true,
         "name": "Cat",
@@ -77,7 +77,7 @@
   },
   "thumbnail": {
     "pagecount": 1,
-    "md5": "/test/thumbnail/1_39f29101d13df269878ef61214790f7d.png"
+    "md5": "/scratchjr/test/thumbnail/1_39f29101d13df269878ef61214790f7d.png"
   },
   "deleted": "NO",
   "version": "iOSv01",
